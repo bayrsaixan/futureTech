@@ -1,0 +1,1129 @@
+/* Future-Tech — Apple Store хэв маягийн Карт, Pill Товч, Шүүлтүүр ба Хүснэгтийн компонентүүд */
+
+/* Брэндийн текст ба туслах классууд */
+.text-ft-primary {
+  color: var(--ft-primary);
+}
+
+.text-ft-accent {
+  color: var(--ft-link);
+}
+
+.ft-text-on-dark-muted {
+  color: var(--ft-text-on-dark-muted);
+}
+
+.ft-eyebrow {
+  font-size: var(--ft-fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ft-eyebrow);
+}
+
+.ft-badge-count-banner {
+  background-color: var(--ft-surface-muted);
+  color: var(--ft-primary);
+  border: 1px solid var(--ft-border-strong);
+  font-weight: 600;
+}
+
+.btn-ft-link {
+  color: var(--ft-link);
+  font-weight: 600;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.btn-ft-link:hover,
+.btn-ft-link:focus {
+  color: var(--ft-accent-hover);
+  text-decoration: underline;
+}
+
+/* Apple Store Товчнууд (Стандарт 13px / 14px / 15px CTA шатлал) */
+.btn-ft-primary {
+  --bs-btn-focus-shadow-rgb: 0, 113, 227;
+  --bs-btn-font-size: 0.875rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.3;
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 1.15rem;
+  background-color: var(--ft-accent);
+  border-color: var(--ft-accent);
+  color: var(--ft-text-inverse);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  border-radius: var(--ft-radius-pill);
+}
+
+.btn-ft-primary:hover,
+.btn-ft-primary:focus {
+  background-color: var(--ft-accent-hover);
+  border-color: var(--ft-accent-hover);
+  color: var(--ft-text-inverse);
+}
+
+.btn-ft-primary.is-added,
+.btn-ft-primary.is-added:hover,
+.btn-ft-primary.is-added:focus {
+  background-color: #059669;
+  border-color: #059669;
+  color: #FFFFFF;
+}
+
+.btn-ft-primary:disabled,
+.btn-ft-primary.disabled {
+  background-color: #9CA3AF;
+  border-color: #9CA3AF;
+  color: var(--ft-text-inverse);
+  opacity: 0.8;
+}
+
+.btn-ft-dark {
+  --bs-btn-focus-shadow-rgb: 29, 29, 31;
+  --bs-btn-font-size: 0.875rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.3;
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 1.15rem;
+  background-color: var(--ft-primary);
+  border-color: var(--ft-primary);
+  color: var(--ft-text-inverse);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  border-radius: var(--ft-radius-pill);
+}
+
+.btn-ft-dark:hover,
+.btn-ft-dark:focus {
+  background-color: var(--ft-primary-light);
+  border-color: var(--ft-primary-light);
+  color: var(--ft-text-inverse);
+}
+
+.btn-ft-outline {
+  --bs-btn-focus-shadow-rgb: 0, 113, 227;
+  --bs-btn-font-size: 0.875rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.3;
+  background-color: var(--ft-surface);
+  border: 1px solid var(--ft-border-strong);
+  color: var(--ft-primary);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  border-radius: var(--ft-radius-pill);
+}
+
+.btn-ft-outline:hover,
+.btn-ft-outline:focus {
+  background-color: var(--ft-bg);
+  border-color: var(--ft-primary);
+  color: var(--ft-primary);
+}
+
+.btn-sm {
+  --bs-btn-font-size: 0.8125rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.3;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.btn-lg {
+  --bs-btn-font-size: 0.9375rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.3;
+  --bs-btn-padding-y: 0.65rem;
+  --bs-btn-padding-x: 1.375rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.btn-outline-light.btn-lg {
+  --bs-btn-color: #FFFFFF;
+  --bs-btn-border-color: rgba(255, 255, 255, 0.48);
+  --bs-btn-hover-color: #FFFFFF;
+  --bs-btn-hover-bg: rgba(255, 255, 255, 0.14);
+  --bs-btn-hover-border-color: rgba(255, 255, 255, 0.85);
+  --bs-btn-active-color: #FFFFFF;
+  --bs-btn-active-bg: rgba(255, 255, 255, 0.22);
+  --bs-btn-active-border-color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.48);
+  color: #FFFFFF;
+}
+
+/* Apple Store Нүүр хуудасны дээд мэндчилгээ ба тавиур */
+.ft-store-intro {
+  padding: clamp(1.1rem, 2.2vw, 1.7rem) 0 1rem;
+}
+
+.ft-store-headline {
+  font-size: clamp(1.65rem, 3.5vw, 2.65rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--ft-primary);
+  margin: 0;
+}
+
+.ft-store-headline-muted {
+  color: var(--ft-text-muted);
+}
+
+.ft-specialist-box {
+  background-color: var(--ft-surface);
+  border-radius: var(--ft-radius-lg);
+  padding: 0.85rem 1.1rem;
+  box-shadow: var(--ft-shadow-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* 5 Ангиллын Apple Studio Shelf */
+.ft-shelf-tile {
+  background-color: var(--ft-surface);
+  border-radius: var(--ft-radius-lg);
+  padding: 1rem 0.85rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100%;
+  box-shadow: var(--ft-shadow-sm);
+  transition: transform var(--ft-transition), box-shadow var(--ft-transition);
+}
+
+.ft-shelf-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ft-shadow-md);
+}
+
+.ft-shelf-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #F8F8FA 0%, #ECECF1 100%);
+  color: var(--ft-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ft-shelf-title {
+  font-size: var(--ft-fs-sm);
+  font-weight: 600;
+  color: var(--ft-primary);
+  line-height: 1.3;
+}
+
+/* Хэсгийн гарчиг (Two-Tone Apple хэв маяг) */
+.ft-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.75rem;
+  margin-bottom: 1.35rem;
+}
+
+.ft-section-title {
+  font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--ft-primary);
+  margin: 0;
+}
+
+.ft-section-title-muted {
+  color: var(--ft-text-muted);
+  font-weight: 600;
+}
+
+.ft-section-desc {
+  color: var(--ft-text-muted);
+  font-size: var(--ft-fs-sm);
+  margin: 0.2rem 0 0;
+}
+
+/* Hero Carousel (Dark Titanium Apple-Pro + Studio Slide) */
+.ft-hero-carousel {
+  border-radius: var(--ft-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--ft-shadow-md);
+}
+
+.ft-hero-slide {
+  background:
+    radial-gradient(circle at 82% 24%, rgba(0, 113, 227, 0.34) 0%, transparent 48%),
+    linear-gradient(135deg, #101014 0%, #1D1D1F 58%, #162538 100%);
+  color: var(--ft-text-inverse);
+  padding: clamp(1.5rem, 3.2vw, 2.4rem) clamp(3.15rem, 4.8vw, 3.85rem) 2.5rem;
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+}
+
+.ft-hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #E5E5EA;
+  padding: 0.28rem 0.85rem;
+  border-radius: var(--ft-radius-pill);
+  font-size: var(--ft-fs-xs);
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+
+.ft-hero-title {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.85rem;
+}
+
+.ft-hero-desc {
+  color: var(--ft-text-on-dark-muted);
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  max-width: 52ch;
+  margin-bottom: 1.35rem;
+}
+
+.ft-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.ft-hero-stat-val {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-variant-numeric: tabular-nums;
+}
+
+.ft-hero-stat-lbl {
+  display: block;
+  font-size: var(--ft-fs-xs);
+  color: var(--ft-text-on-dark-muted);
+}
+
+.ft-hero-visual {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--ft-radius-lg);
+  padding: 1rem;
+}
+
+.ft-hero-carousel .carousel-indicators {
+  margin-bottom: 0.75rem;
+}
+
+.ft-hero-carousel .carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--ft-radius-pill);
+  border: 0;
+  opacity: 0.45;
+  transition: width 0.25s ease, opacity 0.25s ease;
+}
+
+.ft-hero-carousel .carousel-indicators .active {
+  width: 24px;
+  background-color: #FFFFFF;
+  opacity: 1;
+}
+
+.ft-hero-carousel .carousel-control-prev,
+.ft-hero-carousel .carousel-control-next {
+  width: 34px;
+  height: 34px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  opacity: 0.92;
+}
+
+.ft-hero-carousel .carousel-control-prev {
+  left: 0.65rem;
+}
+
+.ft-hero-carousel .carousel-control-next {
+  right: 0.65rem;
+}
+
+/* 5 Жишиг Promo Tiles */
+.ft-promo-tile {
+  background-color: var(--ft-surface);
+  border-radius: var(--ft-radius-lg);
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  height: 100%;
+  box-shadow: var(--ft-shadow-sm);
+  transition: transform var(--ft-transition), box-shadow var(--ft-transition);
+}
+
+.ft-promo-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ft-shadow-md);
+}
+
+.ft-promo-tile-img {
+  background: linear-gradient(180deg, #FAFAFC 0%, #EFEFF4 100%);
+  border-radius: var(--ft-radius-md);
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+}
+
+.ft-promo-tile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ft-promo-tile-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ft-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ft-promo-tile-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ft-primary);
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Ангиллын тойм карт */
+.ft-category-card {
+  background-color: var(--ft-surface);
+  border-radius: var(--ft-radius-lg);
+  padding: 1.35rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: var(--ft-shadow-sm);
+  transition: transform var(--ft-transition), box-shadow var(--ft-transition);
+}
+
+.ft-category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ft-shadow-md);
+}
+
+.ft-category-count {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--ft-bg);
+  color: var(--ft-text-secondary);
+  font-size: var(--ft-fs-xs);
+  font-weight: 600;
+  padding: 0.24rem 0.62rem;
+  border-radius: var(--ft-radius-pill);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Apple Store Барааны Карт */
+.ft-product-card {
+  background-color: var(--ft-surface);
+  border-radius: var(--ft-radius-lg);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--ft-shadow-sm);
+  transition: transform var(--ft-transition), box-shadow var(--ft-transition);
+}
+
+.ft-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ft-shadow-md);
+}
+
+.ft-product-media {
+  position: relative;
+  background: linear-gradient(180deg, #FAFAFC 0%, #EFEFF4 100%);
+  padding: 1rem;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ft-product-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.ft-badge-discount {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  background-color: var(--ft-eyebrow);
+  color: var(--ft-text-inverse);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.22rem 0.6rem;
+  border-radius: var(--ft-radius-pill);
+}
+
+.ft-badge-stock {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--ft-radius-pill);
+}
+
+.ft-product-media .ft-badge-stock {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.ft-badge-stock.in-stock {
+  background-color: var(--ft-success-soft);
+  color: var(--ft-success);
+}
+
+.ft-badge-stock.low-stock {
+  background-color: var(--ft-warning-soft);
+  color: var(--ft-warning-text);
+}
+
+.ft-badge-stock.out-stock {
+  background-color: var(--ft-danger-soft);
+  color: var(--ft-danger-text);
+}
+
+.ft-product-body {
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 0.45rem;
+}
+
+.ft-card-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ft-rating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: var(--ft-fs-xs);
+  font-weight: 600;
+  color: var(--ft-text-secondary);
+}
+
+.ft-product-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  min-height: 2.7em;
+  margin: 0;
+}
+
+.ft-product-title a {
+  color: var(--ft-primary);
+}
+
+.ft-product-title a:hover {
+  color: var(--ft-link);
+}
+
+.ft-spec-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.32rem;
+  margin: 0.1rem 0;
+}
+
+.ft-spec-chip {
+  font-size: 0.72rem;
+  background-color: var(--ft-bg);
+  color: var(--ft-text-secondary);
+  padding: 0.16rem 0.52rem;
+  border-radius: var(--ft-radius-pill);
+}
+
+.ft-price-box {
+  margin-top: auto;
+  padding-top: 0.45rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.ft-price-current {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ft-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.ft-price-old {
+  font-size: var(--ft-fs-sm);
+  color: var(--ft-text-muted);
+  text-decoration: line-through;
+  font-variant-numeric: tabular-nums;
+}
+
+.ft-delivery-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: var(--ft-success-soft);
+  color: var(--ft-success);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.18rem 0.55rem;
+  border-radius: var(--ft-radius-pill);
+  width: fit-content;
+}
+
+.ft-product-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin-top: 0.55rem;
+}
+
+.ft-product-actions .btn {
+  font-size: 0.8125rem;
+  padding: 0.44rem 0.55rem;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ft-product-actions .ft-product-actions-full {
+  grid-column: 1 / -1;
+  min-height: 40px;
+  font-size: 0.875rem;
+}
+
+/* Future-Tech Ялгаа / Trust Cards (Apple Why-Buy Grid) */
+.ft-trust-strip {
+  background-color: transparent;
+  padding: 0;
+}
+
+.ft-trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+  padding: 1.15rem;
+  border-radius: var(--ft-radius-lg);
+  background-color: var(--ft-surface);
+  box-shadow: var(--ft-shadow-sm);
+  height: 100%;
+}
+
+.ft-trust-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: var(--ft-accent-soft);
+  color: var(--ft-accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 0.76rem;
+}
+
+/* Ангиллын таб & Хялбар хайлт */
+.ft-home-cat-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
+}
+
+.ft-home-cat-tab {
+  border-radius: var(--ft-radius-pill);
+  padding: 0.42rem 0.95rem;
+  font-size: var(--ft-fs-sm);
+  font-weight: 500;
+  border: 1px solid var(--ft-border-strong);
+  background-color: var(--ft-surface);
+  color: var(--ft-text-secondary);
+}
+
+.ft-home-cat-tab:hover {
+  border-color: var(--ft-primary);
+  color: var(--ft-primary);
+}
+
+.ft-home-cat-tab.active,
+.ft-home-cat-tab[aria-pressed="true"] {
+  background-color: var(--ft-primary);
+  border-color: var(--ft-primary);
+  color: var(--ft-text-inverse);
+  font-weight: 600;
+}
+
+.ft-easy-search-card {
+  background-color: var(--ft-surface);
+  border-radius: var(--ft-radius-lg);
+  padding: 1.4rem;
+  box-shadow: var(--ft-shadow-sm);
+}
+
+.ft-easy-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.36rem 0.9rem;
+  border-radius: var(--ft-radius-pill);
+  background-color: var(--ft-bg);
+  border: 1px solid var(--ft-border-strong);
+  color: var(--ft-primary);
+  font-size: var(--ft-fs-xs);
+  font-weight: 600;
+  transition: background-color var(--ft-transition), border-color var(--ft-transition), color var(--ft-transition);
+}
+
+.ft-easy-tag:hover {
+  background-color: var(--ft-primary);
+  border-color: var(--ft-primary);
+  color: var(--ft-text-inverse);
+}
+
+/* Promo Banner (Dark Space Titanium Apple-Pro) */
+.ft-promo-banner {
+  background:
+    radial-gradient(circle at 85% 20%, rgba(0, 113, 227, 0.3) 0%, transparent 45%),
+    linear-gradient(135deg, #101014 0%, #1D1D1F 60%, #15253B 100%);
+  color: var(--ft-text-inverse);
+  border-radius: var(--ft-radius-xl);
+  padding: clamp(1.65rem, 3.5vw, 2.5rem);
+  box-shadow: var(--ft-shadow-md);
+}
+
+/* Шүүлтүүрийн самбар */
+.ft-filter-panel {
+  background-color: var(--ft-surface);
+  border-radius: var(--ft-radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--ft-shadow-sm);
+}
+
+.ft-filter-group {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--ft-border);
+}
+
+.ft-filter-group:last-of-type {
+  border-bottom: 0;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0;
+}
+
+.ft-filter-title {
+  font-size: var(--ft-fs-sm);
+  font-weight: 700;
+  color: var(--ft-primary);
+  margin-bottom: 0.65rem;
+}
+
+.ft-results-toolbar {
+  background-color: var(--ft-surface);
+  border-radius: var(--ft-radius-lg);
+  padding: 0.75rem 1.1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: var(--ft-shadow-sm);
+}
+
+.ft-sort-select {
+  min-width: 195px;
+  width: auto;
+  border-radius: var(--ft-radius-pill);
+}
+
+.ft-active-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.ft-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--ft-surface);
+  color: var(--ft-primary);
+  border: 1px solid var(--ft-border-strong);
+  border-radius: var(--ft-radius-pill);
+  font-size: var(--ft-fs-xs);
+  font-weight: 600;
+  padding: 0.28rem 0.7rem;
+  cursor: pointer;
+}
+
+.ft-filter-chip:hover {
+  background-color: var(--ft-surface-muted);
+  border-color: var(--ft-primary);
+}
+
+/* Хоосон илэрц */
+.ft-empty-state {
+  background-color: var(--ft-surface);
+  border: 1px dashed var(--ft-border-strong);
+  border-radius: var(--ft-radius-lg);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+/* Модаль */
+.modal-backdrop {
+  z-index: 1060;
+}
+
+.modal {
+  z-index: 1065;
+}
+
+#ftQuickViewModal .modal-content {
+  background-color: var(--ft-surface);
+  border: 0;
+  border-radius: var(--ft-radius-xl);
+  box-shadow: var(--ft-shadow-lg);
+  opacity: 1;
+}
+
+/* PC Builder ба Харьцуулалт */
+.ft-builder-panel,
+.ft-compare-panel {
+  background-color: var(--ft-surface);
+  border-radius: var(--ft-radius-lg);
+  padding: 1.4rem;
+  box-shadow: var(--ft-shadow-sm);
+  min-width: 0;
+}
+
+.ft-builder-slot {
+  background-color: var(--ft-bg);
+  border: 1px solid var(--ft-border-strong);
+  border-radius: var(--ft-radius-md);
+  padding: 1rem;
+  height: 100%;
+  min-width: 0;
+}
+
+.ft-builder-slot .form-select,
+.ft-compare-panel .form-select {
+  max-width: 100%;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: var(--ft-radius-sm);
+}
+
+.ft-slot-preview-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.ft-slot-preview-info {
+  min-width: 0;
+  flex: 1 1 140px;
+}
+
+.ft-slot-preview-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.ft-slot-preview-price {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--ft-primary);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.ft-builder-slot.is-conflict {
+  border-color: var(--ft-danger);
+  background-color: #FFF5F5;
+}
+
+.ft-builder-slot.is-ok {
+  border-color: var(--ft-success);
+}
+
+.ft-slot-status-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.14rem 0.5rem;
+  border-radius: var(--ft-radius-pill);
+}
+
+.ft-slot-status-badge.is-ok {
+  background-color: var(--ft-success-soft);
+  color: var(--ft-success);
+}
+
+.ft-slot-status-badge.is-conflict {
+  background-color: var(--ft-danger-soft);
+  color: var(--ft-danger-text);
+}
+
+.ft-builder-summary {
+  background-color: var(--ft-primary);
+  color: var(--ft-text-inverse);
+  border-radius: var(--ft-radius-lg);
+  padding: 1.4rem;
+  min-width: 0;
+  box-shadow: var(--ft-shadow-md);
+}
+
+.ft-builder-mobile-bar {
+  background-color: var(--ft-primary);
+  color: var(--ft-text-inverse);
+  border-radius: var(--ft-radius-lg);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ft-compare-table th {
+  background-color: var(--ft-bg);
+  color: var(--ft-primary);
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.ft-compare-table td {
+  vertical-align: middle;
+}
+
+.ft-compare-spec-col {
+  min-width: 118px;
+}
+
+.ft-compare-table thead th:first-child,
+.ft-compare-table tbody th[scope="row"] {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: var(--ft-bg);
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.ft-compare-table tbody th[scope="row"] {
+  z-index: 1;
+  background-color: var(--ft-surface);
+}
+
+.ft-compare-table tbody tr.ft-compare-diff > th[scope="row"],
+.ft-compare-diff > th[scope="row"],
+.ft-compare-diff > td {
+  background-color: #F4F9FF;
+}
+
+.ft-diff-pill {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ft-link);
+  background-color: var(--ft-accent-soft);
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--ft-radius-pill);
+}
+
+.ft-missing-spec {
+  display: inline-block;
+  font-size: var(--ft-fs-xs);
+  font-weight: 600;
+  color: var(--ft-warning-text);
+  background-color: var(--ft-warning-soft);
+  padding: 0.18rem 0.55rem;
+  border-radius: var(--ft-radius-pill);
+}
+
+.ft-nav-tabs .nav-link {
+  color: var(--ft-text-muted);
+  font-weight: 600;
+  border-radius: var(--ft-radius-md) var(--ft-radius-md) 0 0;
+}
+
+.ft-nav-tabs .nav-link.active {
+  color: var(--ft-primary);
+  background-color: var(--ft-surface);
+  border-color: var(--ft-border-strong) var(--ft-border-strong) var(--ft-surface);
+}
+
+/* Toast & Scroll-to-Top */
+.ft-toast-container {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1080;
+  display: grid;
+  gap: 0.5rem;
+  max-width: min(380px, calc(100vw - 2rem));
+}
+
+.ft-toast {
+  background-color: var(--ft-primary);
+  color: var(--ft-text-inverse);
+  border-left: 4px solid var(--ft-accent);
+  border-radius: var(--ft-radius-md);
+  padding: 0.85rem 0.95rem;
+  box-shadow: var(--ft-shadow-lg);
+  font-size: var(--ft-fs-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.ft-toast.is-warning {
+  border-left-color: #FBBF24;
+}
+
+.ft-scroll-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 4.5rem;
+  z-index: 1040;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--ft-primary);
+  color: var(--ft-text-inverse);
+  border: 2px solid var(--ft-surface);
+  box-shadow: var(--ft-shadow-md);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ft-scroll-top.is-visible {
+  display: inline-flex;
+}
+
+.ft-scroll-top:hover {
+  background-color: var(--ft-accent);
+}
+
+/* Mega-Drawer доторх ангилал */
+.ft-mega-cat-block {
+  border: 1px solid var(--ft-border-strong);
+  border-radius: var(--ft-radius-md);
+  padding: 0.8rem;
+  background-color: var(--ft-bg);
+}
+
+.ft-mega-sublink {
+  display: inline-block;
+  font-size: var(--ft-fs-xs);
+  font-weight: 500;
+  padding: 0.24rem 0.6rem;
+  border-radius: var(--ft-radius-pill);
+  background-color: var(--ft-surface);
+  border: 1px solid var(--ft-border-strong);
+  color: var(--ft-primary);
+}
+
+.ft-mega-sublink:hover {
+  background-color: var(--ft-primary);
+  border-color: var(--ft-primary);
+  color: var(--ft-text-inverse);
+}
+
+@media (max-width: 991.98px) {
+  .ft-filter-offcanvas.offcanvas-lg {
+    --bs-offcanvas-width: min(340px, 88vw);
+    border: 0;
+    background-color: var(--ft-surface);
+  }
+
+  .ft-filter-offcanvas .ft-filter-panel {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ft-hero-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+
+  .ft-hero-stat-val {
+    font-size: 1rem;
+  }
+
+  .ft-sort-select {
+    min-width: 150px;
+  }
+}

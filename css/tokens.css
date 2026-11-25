@@ -1,0 +1,76 @@
+/* Future-Tech — Apple Store хэв маягийн Rubik дизайны токенууд (WCAG 2.1 AA нийцтэй) */
+
+:root {
+  /* Өнгөний систем */
+  --ft-primary: #1D1D1F;
+  --ft-primary-dark: #000000;
+  --ft-primary-light: #2C2C2E;
+  --ft-accent: #0071E3;
+  --ft-accent-hover: #005BB5;
+  --ft-accent-bright: #0071E3;
+  --ft-accent-on-dark: #60A5FA;
+  --ft-accent-soft: #EBF5FF;
+  --ft-link: #0066CC;
+  --ft-eyebrow: #BF4800;
+
+  --ft-bg: #F5F5F7;
+  --ft-surface: #FFFFFF;
+  --ft-surface-muted: #EFEFF4;
+  --ft-border: rgba(0, 0, 0, 0.08);
+  --ft-border-strong: #D2D2D7;
+
+  --ft-text: #1D1D1F;
+  --ft-text-secondary: #424245;
+  --ft-text-muted: #6E6E73;
+  --ft-text-inverse: #FFFFFF;
+  --ft-text-on-dark-muted: rgba(255, 255, 255, 0.82);
+
+  --ft-success: #047857;
+  --ft-success-dot: #10B981;
+  --ft-success-soft: #ECFDF5;
+  --ft-warning: #B45309;
+  --ft-warning-text: #92400E;
+  --ft-warning-soft: #FEF3C7;
+  --ft-danger: #DC2626;
+  --ft-danger-text: #B91C1C;
+  --ft-danger-soft: #FEE2E2;
+
+  /* Фокус хүрээ */
+  --ft-focus-light: #0071E3;
+  --ft-focus-dark: #60A5FA;
+
+  /* Типографи (Rubik — Hitech & Apple геометр жишиг) */
+  --ft-font-sans: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, Arial, sans-serif;
+  --ft-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --ft-fs-xs: 0.75rem;
+  --ft-fs-sm: 0.875rem;
+  --ft-fs-base: 1rem;
+  --ft-fs-lg: 1.125rem;
+  --ft-fs-xl: 1.375rem;
+  --ft-fs-2xl: 1.875rem;
+  --ft-fs-3xl: 2.5rem;
+
+  /* Зай ба хэмжээс */
+  --ft-space-1: 0.25rem;
+  --ft-space-2: 0.5rem;
+  --ft-space-3: 0.75rem;
+  --ft-space-4: 1rem;
+  --ft-space-5: 1.5rem;
+  --ft-space-6: 2.25rem;
+  --ft-space-7: 3.25rem;
+  --ft-space-8: 4rem;
+
+  /* Булангийн радиус */
+  --ft-radius-sm: 0.5rem;
+  --ft-radius-md: 0.75rem;
+  --ft-radius-lg: 1.125rem;
+  --ft-radius-xl: 1.5rem;
+  --ft-radius-pill: 9999px;
+
+  /* Сүүдэр ба шилжилт */
+  --ft-shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.04);
+  --ft-shadow-md: 0 8px 28px rgba(0, 0, 0, 0.08);
+  --ft-shadow-lg: 0 18px 44px rgba(0, 0, 0, 0.12);
+  --ft-transition: 0.22s cubic-bezier(0.25, 0.1, 0.25, 1);
+}

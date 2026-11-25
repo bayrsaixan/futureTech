@@ -1,0 +1,10 @@
+# IDE ба Системийн түр файлууд
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+npm-debug.log*
+node_modules/

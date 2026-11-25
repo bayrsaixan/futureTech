@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Future-Tech цахим дэлгүүрийн 5 үндсэн ангиллын тойм ба идэвхтэй барааны тоо.">
+  <title>Бүх ангиллын тойм — FUTURE/TECH</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2036%2036%22%3E%3Crect%20width%3D%2236%22%20height%3D%2236%22%20rx%3D%229%22%20fill%3D%22%231D1D1F%22%2F%3E%3Cpolygon%20points%3D%2210.7%2C7%2029.5%2C7%2026.8%2C11.8%209.7%2C11.8%22%20fill%3D%22%23FFFFFF%22%2F%3E%3Cpolygon%20points%3D%2210.7%2C7%2015.2%2C7%2010.5%2C29%206%2C29%22%20fill%3D%22%23FFFFFF%22%2F%3E%3Cpolygon%20points%3D%228.9%2C15.4%2025.4%2C15.4%2022.8%2C20.2%207.9%2C20.2%22%20fill%3D%22%2338BDF8%22%2F%3E%3Cpolygon%20points%3D%2213.5%2C24.2%2021.2%2C24.2%2019.4%2C29%2012.5%2C29%22%20fill%3D%22%230071E3%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <a class="visually-hidden-focusable ft-skip-link" href="#mainContent">Үндсэн агуулга руу шилжих</a>
+
+  <header class="ft-header sticky-top">
+    <div class="ft-topbar d-none d-lg-block">
+      <div class="container ft-topbar-inner">
+        <span>Future-Tech — Найдвартай технологи, баталгаат компьютер ба сэлбэг</span>
+        <span>
+          <a href="help.html">Тусламж &amp; Салбар</a>
+          &middot;
+          <a href="orders.html">Захиалга шалгах</a>
+        </span>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg ft-navbar" aria-label="Үндсэн цэс">
+      <div class="container">
+        <a class="navbar-brand ft-brand" href="index.html">
+          <span class="ft-brand-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 36 36" fill="none">
+              <polygon points="10.7,7 29.5,7 26.8,11.8 9.7,11.8" fill="#FFFFFF"/>
+              <polygon points="10.7,7 15.2,7 10.5,29 6,29" fill="#FFFFFF"/>
+              <polygon points="8.9,15.4 25.4,15.4 22.8,20.2 7.9,20.2" fill="#38BDF8"/>
+              <polygon points="13.5,24.2 21.2,24.2 19.4,29 12.5,29" fill="#0071E3"/>
+            </svg>
+          </span>
+          <span class="ft-brand-wordmark">
+            <span class="ft-brand-title">FUTURE<span class="ft-brand-slash" aria-hidden="true">/</span><span class="ft-brand-tech">TECH</span><span class="ft-brand-pixel" aria-hidden="true"></span></span>
+            <span class="ft-brand-sub">NEXT-GEN HARDWARE</span>
+          </span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 d-lg-none">
+          <a href="cart.html" class="ft-header-btn ft-header-btn-cart" aria-label="Сагс үзэх">
+            Сагс <span class="ft-cart-badge" data-cart-count>0</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#ftMainNavbar"
+            aria-controls="ftMainNavbar"
+            aria-expanded="false"
+            aria-label="Үндсэн цэс нээх"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse ft-navbar-collapse" id="ftMainNavbar">
+          <ul class="navbar-nav me-lg-3 mb-2 mb-lg-0 ft-nav-list">
+            <li class="nav-item">
+              <a class="nav-link active" href="categories.html" aria-current="page">Ангиллууд</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="compare.html">Компьютер угсрах</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="help.html">Тусламж</a>
+            </li>
+          </ul>
+
+          <form class="ft-header-search mx-lg-auto" action="search.html" method="get" role="search" aria-label="Сайтын хайлт" data-ft-search-form>
+            <input class="form-control" type="search" name="q" placeholder="Бараа, брэнд хайх..." aria-label="Бараа хайх">
+            <button class="btn btn-search" type="submit">Хайх</button>
+          </form>
+
+          <div class="ft-header-actions ms-lg-3">
+            <a href="auth.html" class="ft-header-btn">Нэвтрэх</a>
+            <a href="cart.html" class="ft-header-btn ft-header-btn-cart d-none d-lg-inline-flex">
+              Сагс <span class="ft-cart-badge" data-cart-count>0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="ft-subnav" aria-label="Ангиллын хурдан холбоос">
+    <div class="container">
+      <ul class="ft-subnav-list">
+        <li>
+          <button type="button" class="ft-subnav-link ft-subnav-drawer-btn" data-ft-open-categories aria-label="Бүх ангиллын дэд цэс нээх">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            Бүх ангилал
+          </button>
+        </li>
+        <li><a class="ft-subnav-link" href="category-desktop.html">Суурин компьютер</a></li>
+        <li><a class="ft-subnav-link" href="category-laptop.html">Зөөврийн компьютер</a></li>
+        <li><a class="ft-subnav-link" href="category-parts.html">Компьютерын эд анги</a></li>
+        <li><a class="ft-subnav-link" href="category-peripherals.html">Дагалдах хэрэгсэл &amp; монитор</a></li>
+        <li><a class="ft-subnav-link" href="category-network.html">Сүлжээ &amp; төхөөрөмж</a></li>
+        <li><a class="ft-subnav-link" href="compare.html?tab=compare">Бараа харьцуулах</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="mainContent" tabindex="-1" data-page="categories">
+    <section class="ft-page-banner">
+      <div class="container">
+        <nav aria-label="Замчлал">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Нүүр</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Бүх ангилал</li>
+          </ol>
+        </nav>
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-2">
+          <div>
+            <h1 class="ft-page-title">Бүх ангиллын тойм</h1>
+            <p class="ft-page-subtitle">
+              Дэлгүүрийн 5 үндсэн ангилал, дэд төрлүүд болон идэвхтэй барааны динамик тоо.
+            </p>
+          </div>
+          <span class="badge ft-badge-count-banner fs-6 px-3 py-2">
+            Нийт идэвхтэй бараа: <span id="overviewTotalProducts">31</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-section">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="categoriesOverviewGrid"></div>
+
+        <div class="ft-promo-banner mt-5">
+          <div class="row align-items-center g-3">
+            <div class="col-lg-8">
+              <h2 class="h4 fw-bold mb-1">Загваруудын үзүүлэлтийг зэрэгцүүлэн харьцуулах уу?</h2>
+              <p class="small ft-text-on-dark-muted mb-0">
+                Ижил ангилал ба төрөлд хамаарах хоёр загварыг сонгож RAM, дэлгэц, давтамж болон үнийн зөрүүг хүснэгтээр хараарай.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end d-flex flex-wrap gap-2 justify-content-lg-end">
+              <a href="compare.html?tab=compare" class="btn btn-ft-primary">Бараа харьцуулах</a>
+              <a href="compare.html" class="btn btn-outline-light rounded-pill">Компьютер угсрах</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h2 class="ft-footer-heading">FUTURE<span class="ft-brand-slash">/</span>TECH</h2>
+          <p class="small mb-0">
+            Суурин ба зөөврийн компьютер, эд анги, дагалдах хэрэгсэл болон сүлжээний тоног төхөөрөмжийн цахим дэлгүүр.
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h2 class="ft-footer-heading">Ангиллууд</h2>
+          <ul class="ft-footer-links">
+            <li><a href="categories.html">Бүх ангиллын тойм</a></li>
+            <li><a href="category-desktop.html">Суурин компьютер</a></li>
+            <li><a href="category-laptop.html">Зөөврийн компьютер</a></li>
+            <li><a href="category-parts.html">Компьютерын эд анги</a></li>
+            <li><a href="category-peripherals.html">Дагалдах хэрэгсэл &amp; монитор</a></li>
+            <li><a href="category-network.html">Сүлжээ &amp; бусад төхөөрөмж</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h2 class="ft-footer-heading">Үйлчилгээ ба Захиалга</h2>
+          <ul class="ft-footer-links">
+            <li><a href="compare.html">Компьютер угсрах (Нийцэл)</a></li>
+            <li><a href="compare.html?tab=compare">Бараа харьцуулах</a></li>
+            <li><a href="search.html">Нарийвчилсан хайлт</a></li>
+            <li><a href="cart.html">Миний сагс</a></li>
+            <li><a href="checkout.html">Захиалга баталгаажуулах</a></li>
+            <li><a href="orders.html">Захиалгын түүх</a></li>
+            <li><a href="help.html">Тусламж &amp; Холбоо барих</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <h2 class="ft-footer-heading">Хэрэглэгчийн хэсэг</h2>
+          <ul class="ft-footer-links">
+            <li><a href="auth.html">Нэвтрэх / Бүртгүүлэх</a></li>
+            <li><a href="profile.html">Хувийн профайл</a></li>
+            <li><a href="orders.html">Миний захиалгууд</a></li>
+            <li><a href="help.html">Салбарын байршил</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ft-footer-bottom">
+        <span>&copy; 2026 FUTURE/TECH. Бүх эрх хуулиар хамгаалагдсан.</span>
+        <details class="ft-footer-dev">
+          <summary>Системийн удирдлага</summary>
+          <div class="ft-footer-dev-links">
+            <a href="admin/categories.html">Ангилал</a>
+            <a href="admin/products.html">Бүтээгдэхүүн</a>
+            <a href="admin/orders.html">Захиалга</a>
+            <a href="admin/payments.html">Төлбөр</a>
+            <a href="admin/customers.html">Үйлчлүүлэгчид</a>
+            <a href="admin/content.html">Контент</a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/data/seed-data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

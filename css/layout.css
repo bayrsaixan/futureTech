@@ -1,0 +1,595 @@
+/* Future-Tech — Apple Store хэв маягийн Frosted Header, Subnav, Footer ба Responsive байршил */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ft-font-sans);
+  font-size: var(--ft-fs-base);
+  line-height: 1.5;
+  color: var(--ft-text);
+  background-color: var(--ft-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+main#mainContent:focus,
+main#mainContent:focus-visible {
+  outline: none;
+}
+
+a {
+  color: var(--ft-link);
+  text-decoration: none;
+  transition: color var(--ft-transition);
+}
+
+a:hover {
+  color: var(--ft-accent-hover);
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Skip link ба :focus-visible хүртээмжийн хүрээ */
+.ft-skip-link:focus,
+.ft-skip-link:focus-visible {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2000;
+  padding: 0.65rem 1.1rem;
+  border-radius: var(--ft-radius-pill);
+  background-color: var(--ft-primary);
+  color: var(--ft-text-inverse);
+  font-weight: 600;
+  font-size: var(--ft-fs-sm);
+  box-shadow: var(--ft-shadow-lg);
+  outline: 3px solid var(--ft-accent);
+  outline-offset: 2px;
+}
+
+:is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--ft-focus-light);
+  outline-offset: 2px;
+}
+
+:is(.ft-hero-slide, .ft-promo-banner, .ft-builder-summary) :is(a, button, input, select):focus-visible {
+  outline: 3px solid var(--ft-focus-dark);
+  outline-offset: 2px;
+}
+
+/* Дээд нарийн мэдээллийн зурвас */
+.ft-topbar {
+  background-color: var(--ft-surface-muted);
+  color: var(--ft-text-secondary);
+  font-size: var(--ft-fs-xs);
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--ft-border);
+}
+
+.ft-topbar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ft-topbar a {
+  color: var(--ft-link);
+  font-weight: 500;
+}
+
+.ft-topbar a:hover {
+  text-decoration: underline;
+}
+
+/* Frosted Glass Apple Header */
+.ft-header {
+  background-color: rgba(255, 255, 255, 0.86);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--ft-border);
+  z-index: 1030;
+}
+
+.ft-navbar {
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+}
+
+.ft-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.62rem;
+  color: var(--ft-primary);
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.11em;
+}
+
+.ft-brand:hover,
+.ft-brand:focus {
+  color: var(--ft-primary);
+}
+
+.ft-brand-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #242428 0%, #101014 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.ft-brand-wordmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+}
+
+.ft-brand-title {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.04rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--ft-primary);
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.ft-brand-tech {
+  font-weight: 600;
+  color: var(--ft-text-secondary);
+}
+
+.ft-brand-slash {
+  color: var(--ft-accent);
+  font-weight: 800;
+  margin: 0 0.08em;
+  display: inline-block;
+  transform: skewX(-12deg);
+}
+
+.ft-brand-pixel {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 1.5px;
+  background-color: var(--ft-accent);
+  margin-left: 0.2em;
+  align-self: flex-end;
+  margin-bottom: 0.1em;
+  box-shadow: 0 0 8px rgba(0, 113, 227, 0.45);
+}
+
+.ft-brand-sub {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--ft-text-muted);
+  margin-top: 0.2rem;
+  line-height: 1.1;
+}
+
+.ft-navbar .navbar-toggler {
+  border-color: var(--ft-border-strong);
+  color: var(--ft-primary);
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--ft-radius-pill);
+}
+
+.ft-navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 113, 227, 0.25);
+}
+
+.ft-nav-list {
+  gap: 0.2rem;
+}
+
+.ft-navbar .nav-link {
+  color: var(--ft-text-secondary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.42rem 0.7rem;
+  border-radius: var(--ft-radius-pill);
+  white-space: nowrap;
+}
+
+.ft-navbar .nav-link:hover,
+.ft-navbar .nav-link:focus {
+  color: var(--ft-primary);
+  background-color: var(--ft-surface-muted);
+}
+
+.ft-navbar .nav-link.active {
+  color: var(--ft-primary);
+  background-color: var(--ft-surface-muted);
+  font-weight: 600;
+}
+
+/* Pill Хайлтын талбар */
+.ft-header-search {
+  display: flex;
+  align-items: stretch;
+  flex: 1 1 240px;
+  max-width: 380px;
+  min-width: 0;
+  background-color: var(--ft-bg);
+  border-radius: var(--ft-radius-pill);
+  padding: 0.16rem 0.2rem 0.16rem 0.55rem;
+  border: 1px solid var(--ft-border-strong);
+}
+
+.ft-header-search .form-control {
+  border-radius: var(--ft-radius-pill);
+  border: 0;
+  background-color: transparent;
+  color: var(--ft-text);
+  font-size: var(--ft-fs-sm);
+  min-width: 0;
+  box-shadow: none;
+}
+
+.ft-header-search .form-control:focus,
+.ft-header-search .form-control:focus-visible {
+  border-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.ft-header-search:focus-within {
+  border-color: var(--ft-accent);
+  background-color: var(--ft-surface);
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.24);
+}
+
+.ft-header-search .btn-search {
+  border-radius: var(--ft-radius-pill);
+  background-color: var(--ft-accent);
+  border: 1px solid var(--ft-accent);
+  color: var(--ft-text-inverse);
+  font-weight: 600;
+  font-size: var(--ft-fs-xs);
+  padding: 0.38rem 0.9rem;
+  white-space: nowrap;
+}
+
+.ft-header-search .btn-search:hover {
+  background-color: var(--ft-accent-hover);
+  border-color: var(--ft-accent-hover);
+}
+
+/* Header үйлдлийн товч (Нэвтрэх, Сагс) */
+.ft-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-shrink: 0;
+}
+
+.ft-header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--ft-radius-pill);
+  font-size: var(--ft-fs-sm);
+  font-weight: 500;
+  color: var(--ft-primary);
+  border: 1px solid var(--ft-border-strong);
+  background-color: var(--ft-surface);
+  white-space: nowrap;
+  transition: background-color var(--ft-transition), border-color var(--ft-transition);
+}
+
+.ft-header-btn:hover {
+  color: var(--ft-primary);
+  background-color: var(--ft-surface-muted);
+  border-color: #B0B0B8;
+}
+
+.ft-header-btn-cart {
+  background-color: var(--ft-primary);
+  border-color: var(--ft-primary);
+  color: var(--ft-text-inverse);
+  font-weight: 600;
+}
+
+.ft-header-btn-cart:hover {
+  color: var(--ft-text-inverse);
+  background-color: var(--ft-primary-light);
+  border-color: var(--ft-primary-light);
+}
+
+.ft-cart-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  padding: 0 0.35rem;
+  border-radius: var(--ft-radius-pill);
+  background-color: var(--ft-accent);
+  color: var(--ft-text-inverse);
+  font-size: var(--ft-fs-xs);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Ангиллын хурдан холбоосын дэд мөр */
+.ft-subnav {
+  background-color: var(--ft-surface);
+  border-bottom: 1px solid var(--ft-border);
+}
+
+.ft-subnav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.18rem 0.28rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.42rem 0;
+}
+
+.ft-subnav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.79rem;
+  font-weight: 500;
+  color: var(--ft-text-secondary);
+  padding: 0.26rem 0.44rem;
+  border-radius: var(--ft-radius-pill);
+  white-space: nowrap;
+  background: transparent;
+  border: 0;
+}
+
+.ft-subnav-link:hover,
+.ft-subnav-link.active {
+  color: var(--ft-primary);
+  background-color: var(--ft-bg);
+  font-weight: 600;
+}
+
+.ft-subnav-drawer-btn {
+  background-color: var(--ft-bg);
+  color: var(--ft-primary);
+  border: 1px solid var(--ft-border-strong);
+  font-weight: 600;
+}
+
+.ft-subnav-drawer-btn:hover {
+  background-color: var(--ft-surface-muted);
+  border-color: var(--ft-primary);
+}
+
+/* Хуудасны хэсэг ба Apple Studio дэд хуудасны толгой */
+.ft-section {
+  padding: var(--ft-space-6) 0;
+}
+
+.ft-page-banner {
+  background-color: var(--ft-surface);
+  color: var(--ft-text);
+  padding: var(--ft-space-5) 0;
+  border-bottom: 1px solid var(--ft-border-strong);
+}
+
+.ft-page-banner .breadcrumb {
+  margin-bottom: 0.5rem;
+  font-size: var(--ft-fs-sm);
+}
+
+.ft-page-banner .breadcrumb-item a {
+  color: var(--ft-link);
+  font-weight: 500;
+}
+
+.ft-page-banner .breadcrumb-item.active,
+.ft-page-banner .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--ft-text-muted);
+}
+
+.ft-page-title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.028em;
+  color: var(--ft-primary);
+}
+
+.ft-page-subtitle {
+  margin: 0.35rem 0 0;
+  color: var(--ft-text-muted);
+  max-width: 68ch;
+  font-size: var(--ft-fs-base);
+}
+
+.ft-banner-link {
+  color: var(--ft-link);
+  font-weight: 600;
+}
+
+.ft-banner-link:hover {
+  text-decoration: underline;
+}
+
+/* Каталог байрлал */
+.ft-catalog-layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: var(--ft-space-5);
+  align-items: start;
+}
+
+/* Apple Store Хөнгөн Цэвэр Footer */
+.ft-footer {
+  background-color: var(--ft-bg);
+  color: var(--ft-text-muted);
+  padding: var(--ft-space-7) 0 var(--ft-space-5);
+  border-top: 1px solid var(--ft-border-strong);
+  margin-top: auto;
+}
+
+.ft-footer-heading {
+  color: var(--ft-primary);
+  font-size: var(--ft-fs-sm);
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+}
+
+.ft-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.45rem;
+  font-size: var(--ft-fs-sm);
+}
+
+.ft-footer-links a {
+  color: var(--ft-text-secondary);
+}
+
+.ft-footer-links a:hover {
+  color: var(--ft-primary);
+  text-decoration: underline;
+}
+
+.ft-footer-bottom {
+  margin-top: var(--ft-space-6);
+  padding-top: var(--ft-space-4);
+  border-top: 1px solid var(--ft-border-strong);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--ft-fs-xs);
+  color: var(--ft-text-muted);
+}
+
+.ft-footer-dev summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--ft-text-muted);
+}
+
+.ft-footer-dev summary::-webkit-details-marker {
+  display: none;
+}
+
+.ft-footer-dev[open] summary {
+  color: var(--ft-primary);
+  margin-bottom: 0.35rem;
+}
+
+.ft-footer-dev-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+}
+
+.ft-footer-dev-links a {
+  color: var(--ft-text-secondary);
+}
+
+.ft-footer-dev-links a:hover {
+  color: var(--ft-link);
+  text-decoration: underline;
+}
+
+/* Responsive тохиргоо */
+@media (max-width: 991.98px) {
+  .ft-catalog-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ft-navbar-collapse {
+    padding-top: 0.85rem;
+    margin-top: 0.65rem;
+    border-top: 1px solid var(--ft-border);
+  }
+
+  .ft-header-search {
+    max-width: 100%;
+    width: 100%;
+    margin: 0.65rem 0;
+  }
+
+  .ft-header-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .ft-subnav-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.35rem;
+    padding: 0.4rem 0;
+    scrollbar-width: none;
+  }
+
+  .ft-subnav-list::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ft-section {
+    padding: var(--ft-space-5) 0;
+  }
+
+  .ft-brand {
+    font-size: 0.88rem;
+    gap: 0.42rem;
+    margin-right: 0.35rem;
+  }
+
+  .ft-brand-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+  }
+
+  .ft-brand-title {
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+  }
+
+  .ft-brand-sub {
+    display: none;
+  }
+}
